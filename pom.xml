@@ -41,9 +41,9 @@
     </parent>
 
 	<scm>
-		<connection>scm:svn:http://anonsvn.jboss.org/repos/riftsaw/trunk</connection>
-		<developerConnection>scm:svn:https://svn.jboss.org/repos/riftsaw/trunk</developerConnection>
-		<url>http://fisheye.jboss.org/browse/Riftsaw</url>
+		<connection>scm:git@github.com:bertolero/riftsaw.git</connection>
+		<developerConnection>scm:git@github.com:bertolero/riftsaw.git</developerConnection>
+		<url>https://github.com/bertolero/riftsaw</url>
 	</scm>
 
 	<developers>
@@ -240,18 +240,16 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<distributionManagement>
-		<repository>
-			<id>jboss-releases-repository</id>
-			<name>JBoss Releases Repository</name>
-			<url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
-		</repository>
-		<snapshotRepository>
-			<id>jboss-snapshots-repository</id>
-			<name>JBoss Snapshots Repository</name>
-			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
+    <distributionManagement>
+      <repository>
+        <id>packagecloud-bertol</id>
+        <url>packagecloud+https://packagecloud.io/bertol/maven</url>
+      </repository>
+      <snapshotRepository>
+        <id>packagecloud-bertol</id>
+        <url>packagecloud+https://packagecloud.io/bertol/maven</url>
+      </snapshotRepository>
+    </distributionManagement>
 
   <build>
     <!-- This section defines the default plugin settings inherited by child projects. -->
